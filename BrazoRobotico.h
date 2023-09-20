@@ -1,14 +1,14 @@
-#include <iostream.h>
+# include <iostream>
 
-using namespace;
+using namespace std;
 
-Class BrazoRobotico {
+class BrazoRobotico{
 
 	private:
 		double x;
 		double y;
 		double z;
-		bool object;
+		bool objeto;
 
 	public:
 		BrazoRobotico(double x_, double y_, double z_, bool objeto_);
@@ -19,4 +19,4 @@ Class BrazoRobotico {
 		void coger(bool objeto);
 		void soltar(bool objeto);
 		void mover(double x, double y, double z);
-}
+};

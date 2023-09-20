@@ -4,7 +4,8 @@ BrazoRobotico::BrazoRobotico(double x_, double y_, double z_, bool objeto_){
 		double x = x_;
 		double y = y_;
 		double z = z_;
-		bool objeto_;
+		bool objeto = objeto_;
+		
 }
 
 double BrazoRobotico::getX(){
@@ -20,7 +21,7 @@ double BrazoRobotico::getZ (){
 }
 
 bool BrazoRobotico::getObjeto(){
-		return object;
+		return objeto;
 }
 
 
@@ -32,9 +33,9 @@ void BrazoRobotico::soltar(bool objeto){
 		objeto = false;
 }
 
-void BrazoRobotico::mover(double x, double y, double z){
+void BrazoRobotico::mover(double newx, double newy, double newz){
 		x = newx;
 		y = newy;
 		z = newz;
 }
-}
+
